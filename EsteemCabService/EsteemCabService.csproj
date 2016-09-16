@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E15BD3F9-8279-4F9D-9958-258520CDFF4F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EsteemCabService</RootNamespace>
+    <AssemblyName>EsteemCabService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Npgsql, Version=2.2.5.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\PostgreSQL\Npgsql\ms.net20\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="Admin\AdminHome.aspx" />
+    <Content Include="Admin\EditCustomerDetails.aspx" />
+    <Content Include="Admin\EditDriverDetails.aspx" />
+    <Content Include="Admin\Images\admin.jpeg" />
+    <Content Include="Admin\Images\Admin1.jpeg" />
+    <Content Include="Admin\Images\AdminAngry.jpg" />
+    <Content Include="Admin\Images\AdminWork.jpeg" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Customer\AboutUsC.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Admin\ActivateDriver.aspx" />
+    <Content Include="Admin\AdminRegistration.aspx" />
+    <Content Include="Admin\DepartmentDetails.aspx" />
+    <Content Include="Admin\AdminDetails.aspx" />
+    <Content Include="Admin\AdminLogIn.aspx" />
+    <Content Include="Admin\InvoiceReport.aspx" />
+    <Content Include="Customer\ContactUsC.aspx" />
+    <Content Include="Customer\BookACab.aspx" />
+    <Content Include="Customer\RideStatus.aspx" />
+    <Content Include="Customer\UpdatePersonalDetails.aspx" />
+    <Content Include="Customer\Images\cabs.png" />
+    <Content Include="Customer\GetUserDirections.aspx" />
+    <Content Include="Customer\Images\truckt.png" />
+    <Content Include="Customer\Images\u1.png" />
+    <Content Include="Customer\CustomerLogIn.aspx" />
+    <Content Include="Driver\AboutUsD.aspx" />
+    <Content Include="Driver\CabDetails.aspx" />
+    <Content Include="Driver\ContactUsD.aspx" />
+    <Content Include="Driver\DriverRideStatus.aspx" />
+    <Content Include="Driver\Images\Driver.jpeg" />
+    <Content Include="Driver\Images\Driver1.jpeg" />
+    <Content Include="Driver\Images\DriverLogin.jpeg" />
+    <Content Include="Driver\Images\FinishRide.jpeg" />
+    <Content Include="Driver\Images\StartRide.jpeg" />
+    <Content Include="Driver\StartRide.aspx" />
+    <Content Include="Driver\DriverHome.aspx" />
+    <Content Include="Driver\DriverLogIn.aspx" />
+    <Content Include="Driver\DriverPersonalDetails.aspx" />
+    <Content Include="Driver\FinishRide.aspx" />
+    <Content Include="EcsMain.aspx" />
+    <Content Include="Images\CustImg.jpg" />
+    <Content Include="Images\CustImg1.jpg" />
+    <Content Include="Images\Customers.jpeg" />
+    <Content Include="Images\CustomerWaiting.jpeg" />
+    <Content Include="Images\Drawing.png" />
+    <Content Include="Images\hbg1.gif" />
+    <Content Include="Images\loadingAnim.gif" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\MainScreen.jpeg" />
+    <Content Include="Images\MainScreen1.jpeg" />
+    <Content Include="Images\MainScreenCab.jpg" />
+    <Content Include="Images\Point.jpg" />
+    <Content Include="Images\TruckIcon.jpg" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Customer\UserHome.aspx" />
+    <Content Include="Customer\UserRegistration.aspx" />
+    <Content Include="Driver\BeADriver.aspx" />
+    <Content Include="Scripts\jquery-1.3.2.min.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Customer\NearByCabs.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditCustomerDetails.aspx.cs">
+      <DependentUpon>EditCustomerDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditCustomerDetails.aspx.designer.cs">
+      <DependentUpon>EditCustomerDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditDriverDetails.aspx.cs">
+      <DependentUpon>EditDriverDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditDriverDetails.aspx.designer.cs">
+      <DependentUpon>EditDriverDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\AboutUsC.aspx.cs">
+      <DependentUpon>AboutUsC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\AboutUsC.aspx.designer.cs">
+      <DependentUpon>AboutUsC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ActivateDriver.aspx.cs">
+      <DependentUpon>ActivateDriver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ActivateDriver.aspx.designer.cs">
+      <DependentUpon>ActivateDriver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminRegistration.aspx.cs">
+      <DependentUpon>AdminRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminRegistration.aspx.designer.cs">
+      <DependentUpon>AdminRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DepartmentDetails.aspx.cs">
+      <DependentUpon>DepartmentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DepartmentDetails.aspx.designer.cs">
+      <DependentUpon>DepartmentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminDetails.aspx.cs">
+      <DependentUpon>AdminDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDetails.aspx.designer.cs">
+      <DependentUpon>AdminDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLogIn.aspx.cs">
+      <DependentUpon>AdminLogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogIn.aspx.designer.cs">
+      <DependentUpon>AdminLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InvoiceReport.aspx.cs">
+      <DependentUpon>InvoiceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InvoiceReport.aspx.designer.cs">
+      <DependentUpon>InvoiceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ContactUsC.aspx.cs">
+      <DependentUpon>ContactUsC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ContactUsC.aspx.designer.cs">
+      <DependentUpon>ContactUsC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\BookACab.aspx.cs">
+      <DependentUpon>BookACab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\BookACab.aspx.designer.cs">
+      <DependentUpon>BookACab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\RideStatus.aspx.cs">
+      <DependentUpon>RideStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\RideStatus.aspx.designer.cs">
+      <DependentUpon>RideStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\UpdatePersonalDetails.aspx.cs">
+      <DependentUpon>UpdatePersonalDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\UpdatePersonalDetails.aspx.designer.cs">
+      <DependentUpon>UpdatePersonalDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\GetUserDirections.aspx.cs">
+      <DependentUpon>GetUserDirections.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\GetUserDirections.aspx.designer.cs">
+      <DependentUpon>GetUserDirections.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CustomerLogIn.aspx.cs">
+      <DependentUpon>CustomerLogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CustomerLogIn.aspx.designer.cs">
+      <DependentUpon>CustomerLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\AboutUsD.aspx.cs">
+      <DependentUpon>AboutUsD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\AboutUsD.aspx.designer.cs">
+      <DependentUpon>AboutUsD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\CabDetails.aspx.cs">
+      <DependentUpon>CabDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\CabDetails.aspx.designer.cs">
+      <DependentUpon>CabDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\ContactUsD.aspx.cs">
+      <DependentUpon>ContactUsD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\ContactUsD.aspx.designer.cs">
+      <DependentUpon>ContactUsD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\DriverRideStatus.aspx.cs">
+      <DependentUpon>DriverRideStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\DriverRideStatus.aspx.designer.cs">
+      <DependentUpon>DriverRideStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\StartRide.aspx.cs">
+      <DependentUpon>StartRide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\StartRide.aspx.designer.cs">
+      <DependentUpon>StartRide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\DriverHome.aspx.cs">
+      <DependentUpon>DriverHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\DriverHome.aspx.designer.cs">
+      <DependentUpon>DriverHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\DriverLogIn.aspx.cs">
+      <DependentUpon>DriverLogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\DriverLogIn.aspx.designer.cs">
+      <DependentUpon>DriverLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\DriverPersonalDetails.aspx.cs">
+      <DependentUpon>DriverPersonalDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\DriverPersonalDetails.aspx.designer.cs">
+      <DependentUpon>DriverPersonalDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\FinishRide.aspx.cs">
+      <DependentUpon>FinishRide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\FinishRide.aspx.designer.cs">
+      <DependentUpon>FinishRide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EcsMain.aspx.cs">
+      <DependentUpon>EcsMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EcsMain.aspx.designer.cs">
+      <DependentUpon>EcsMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\BeADriver.aspx.cs">
+      <DependentUpon>BeADriver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driver\BeADriver.aspx.designer.cs">
+      <DependentUpon>BeADriver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\NearByCabs.aspx.cs">
+      <DependentUpon>NearByCabs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\NearByCabs.aspx.designer.cs">
+      <DependentUpon>NearByCabs.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogicLayer.csproj">
+      <Project>{BDCCC161-C103-41B2-BCBC-EA6934269BA8}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14474</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

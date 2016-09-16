@@ -1,0 +1,5 @@
+C:\MangeshProjects\EsteemCabService\DataAccess\bin\Debug\DataAccess.dll
+C:\MangeshProjects\EsteemCabService\DataAccess\bin\Debug\DataAccess.pdb
+C:\MangeshProjects\EsteemCabService\DataAccess\obj\Debug\DataAccess.dll
+C:\MangeshProjects\EsteemCabService\DataAccess\obj\Debug\DataAccess.pdb
+C:\MangeshProjects\EsteemCabService\DataAccess\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
